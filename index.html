@@ -1,25 +1,71 @@
 
-<html> 
-    <head>  
-        <title> 
-            Resume
-        </title>
-    </head>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
 
-    <body>
-        <h1> George Makhoul </h1>
-        
-        <a href ="https://www.linkedin.com/in/georgemakhoul/"> 
-      <!-- this is the picture url to linkedlin --> 
-        <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAdMAAAAJGRiMWRlNWVlLTg3ZmQtNDZhNC04MGY1LWU4NWU4ZDZkYzgxNA.jpg"/> </a> 
-        
-        <h3> <strong> About </strong> </h3>
-            <p style="font-size: 20px"> I am a student at San Jose State University studying Computer Engineering with the goal of bringing technology principles to the business world. This includes improving workplace environment and organizational culture by changing a stagnant and independent workplace that many organizations have adopted today into a dynamic and exciting one. Being able to combine the skills developed through engineering along with my innate leadership and communication skills to manage and lead a group of employees to success and productivity. </p>
-        <h3> Education </h3> 
-            <p style="font-size: 15px"> San Jose State University  </p>
-            <p style="font-size: 15px"> BS, Computer Engineering </p> 
-            <p style="font-size: 15px"> 2015-2020 </p> 
-            
-    </body>    
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
 
+.article {
+    text-align: left;
+}
+
+header {background: black;color:white;}
+footer {background: #aaa;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1>City Gallery</h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="#">London</a></li>
+  <li><a href="#">Paris</a></li>
+  <li><a href="#">Tokyo</a></li>
+</ul>
+</nav>
+
+<article class="article">
+  <h1>London</h1>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom,
+  with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+  <p><strong>Resize this page to see that what happens!</strong></p>
+</article>
+
+<footer>Copyright &copy; W3Schools.com</footer>
+</div>
+
+</body>
 </html>
+
