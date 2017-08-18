@@ -1,4 +1,4 @@
-## George Makhoul
+## George 
  
 I am a student at San Jose State University studying Computer Engineering with the goal of bringing technology principles to the business world. This includes improving workplace environment and organizational culture by changing a stagnant and independent workplace that many organizations have adopted today into a dynamic and exciting one. Being able to combine the skills developed through engineering along with my innate leadership and communication skills to manage and lead a group of employees to success and productivity.
 
